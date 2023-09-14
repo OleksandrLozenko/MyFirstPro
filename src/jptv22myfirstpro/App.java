@@ -1,23 +1,52 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package jptv22myfirstpro;
 
+import java.util.Scanner;
 /**
  *
  * @author Sanya
  */
 public class App {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        App app = new App();
-        System.out.print("app.toString = "+app.toString());
+    private final Scanner sc;
+    boolean repeat = true;
+    
+    public App() { 
+        this.sc = new Scanner(System.in);
     }
+    
+    public void run(){
+        do{
+            System.out.println("Выберите задачу из списка: " + "\n");
+            System.out.println("0. Выйти из программы");
+            System.out.println("1. Демонстрация работы со строками");
+            System.out.println("2. Демонстрация работы с массивами");
+            System.out.print("Номер задачи: ");
+            
+            int user  = sc.nextInt(); sc.nextLine();
+            
+            switch (user) {
+                case 0:
+                    System.out.print("Вы выбрали -> Dыход из программы!");
+                    repeat = false;
+                    break;
+                    
+                case 1:
+                    System.out.print("Вы выбрали задачу -> Демонстрация работы со строками!" + "\n");
+                    
+                    break;
+                    
+                case 2:   
+                    System.out.print("Вы выбрали задачу -> Демонстрация работы с массивами!" + "\n");
+                    
+                    break;
+                    
+                default:
+                    System.out.print("Выберите номер задачи из списка = (1,2) или выйдите из программы = (0)!" + "\n");
+            }
+        }while(repeat);
+        
+    }
+    
+    
     
 }
