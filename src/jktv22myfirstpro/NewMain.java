@@ -3,14 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tasks;
+package jktv22myfirstpro.newpackage;
 
 /**
  *
  * @author pupil
  */
-public class MyStrings {
-    public void doStrings(){
-        System.out.println("Разберем, что такое строки");
+public class NewMain {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
     }
+    
 }
