@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jktv22myfirstpro.newpackage;
+package jptv22myfirstpro;
 
 /**
  *
  * @author pupil
  */
-public class NewMain {
+public class Myfirst {
 
     /**
      * @param args the command line arguments
